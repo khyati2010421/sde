@@ -1,0 +1,30 @@
+{% extends "base.html" %} 
+{% block title %}Page{% endblock %} 
+{% block content%}
+
+<form method="POST">
+    <h3 align="center">ADD ITEM - ADMIN</h3>
+    <div class="form-group">
+      <label for="data">Item name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="data"
+        name="data"
+        placeholder="Enter Item" />
+    </div>
+  
+    <div class="form-group">
+      <label for="types">Category - (Breakfast/Lunch/Dinner/Others)</label>
+      <input
+        type="text"
+        class="form-control"
+        id="types"
+        name="types"
+        placeholder="Enter Type" />
+    </div>
+  
+    <br />
+    <button type="submit" class="btn btn-warning">Add item</button>
+  </form>
+{% endblock %}
